@@ -805,8 +805,9 @@ typedef unsigned long long Uint64;
 #elif defined(__VC32__)
 typedef __int64 Int64;
 typedef unsigned __int64 Uint64;
-#define	I64LIT(x)	(__int64)##x
-#define	UI64LIT(x)	(unsigned __int64)##x
+#define	I64LIT(x)	static_cast<__int64>(x)
+#define	UI64LIT(x)	static_cast<unsigned __int64>(x)
+
 
 #elif defined(__CW32__)
 #pragma longlong on
