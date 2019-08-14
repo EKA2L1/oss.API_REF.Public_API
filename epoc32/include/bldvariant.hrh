@@ -20,7 +20,7 @@
 
 #include "defaultcaps.hrh"
 
-#include "variant/Symbian_OS.hrh"
+#include "variant/symbian_os.hrh"
 #include "privateruntimeids.hrh"  
 #include "publicruntimeids.hrh"  
 
